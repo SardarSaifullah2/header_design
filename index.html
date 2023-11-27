@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vault - website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="max_width">
+            <div class="header_inner_content">
+                <div class="left_container">
+                    <!-- Header logo  -->
+                    <div class="logo">
+                        <img src="https://vault.uicore.co/corporate/wp-content/uploads/sites/10/2022/05/Vault-Logo.webp" alt="">
+                    </div>
+                    <!-- mobile Menu icon  -->
+                    <div class="mobile_menu_icon">
+                        <svg class="open" width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="34" height="3" rx="1.5" fill="#282828" />
+                            <rect y="7" width="25" height="3" rx="1.5" fill="black" />
+                            <rect y="14" width="34" height="3" rx="1.5" fill="#303030" />
+                        </svg>
+                        <svg class="close" width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="37" height="4.32353" rx="2.16176" transform="matrix(0.707107 0.707107 0.707107 -0.707107 0 3.05719)"
+                                fill="#111111" />
+                            <rect width="37.0588" height="4.32353" rx="2.16176"
+                                transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 3.77078 29.3577)" fill="#111111" />
+                        </svg>
+
+ 
+                    </div>
+                </div>
+                <div class="right_container ">
+                    <div class="menu_links_container">
+                        <ul>
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Services</li>
+                            <li>Blog</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <div class="header_button">
+                        <button>Get in Touch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script>
+        const mobile_menu = document.querySelector('.mobile_menu_icon')
+        const right_container = document.querySelector('.right_container')
+
+        mobile_menu.addEventListener('click', ()=>{
+            right_container.classList.toggle('active')
+            mobile_menu.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
